@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "NX3L4051")(type "KiCad")(uri "${KIPRJMOD}/libs/NX3L4051/2023-11-13_08-13-26.kicad_sym")(options "")(descr ""))
-  (lib (name "MCP6V26")(type "KiCad")(uri "${KIPRJMOD}/libs/MCP6V26/2023-12-03_13-10-23.kicad_sym")(options "")(descr ""))
-)
