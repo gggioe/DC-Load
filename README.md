@@ -23,6 +23,14 @@ The main goals are:
 At now on mouser the best mosfet regarding quality/price ratio is the FDP61N20 however higher power (and more expensive) mosfet such as FDH45N50 can be used, later in the design i will mark some good mid-range alternatives. Due to the relatively small mosfet surface area, in order to get the best performance liquid metal and water cooling system should be used in order to get the best performance. The overall dissipated power strictly depends on the used mosfet, by using a relatively large package transistor with 40x80 water block, liquid metal, and adequate size radiator/pump, 1kW or more (in case of multiple modules in parallel) should be possible. As intuition, heat is the critical part of this project, mosfet has a temperature derating curve that should not be excedeed for safe DC operation, even if a mosfet is 450W max rated for example this will not be true at 50 degree case temperature. Due to the junction-case thermal resistance if the derating curve is not respected even with a relatively low case temperature of around 50 degrees the die will exceed the 150 degree limit thus destroying the transistor. To make things worse each thermal "layer" such as thermal paste, radiator, etc. has its own thermal resistance that adds up to the total mosfet-ambient thermal resistance. At this point i perform some thermal estimation, however, it does not make much sense to upload these numbers since these are just guesses, because to my surprise even large radiator/thermal paste manufacturers do not share the thermal property of their product such as thermal resistance, airflow graph, etc. At this point is unclear to me how without the exact manufacture number the end user should implement a product. It seems like even the pc builder community does not have a clear answer to my problem, and i really don't trust any rule of thumb (like the 120mm x 100W). Now, even if i already know that this is not possible, the only thing that i can do is to experimentally validate each solution starting from the "best", in reality since this will cost me way too much money and time i think that i will use one 80x40 copper (or nickel-plated) water block + Galinstan based thermal compound and then add 120x240 or 120x360mm radiator until i reach decent temperatures.
 
 # Simulation and Waveform
-
+Module Schematic:
 ![alt text](https://github.com/gggioe/DC-Load/blob/main/Simulations/Pictures/DC_Load_Module.png)
+
+1mA Pulsed test:
 ![alt text](https://github.com/gggioe/DC-Load/blob/main/Simulations/Pictures/DC_Load_Module_wf.png)
+Even with slightly worse performing op-amps, 1mA is theoretically possible
+
+20A Pulsed test:
+![alt text](https://github.com/gggioe/DC-Load/blob/main/Simulations/Pictures/20A_Waveforms.png)
+
+
